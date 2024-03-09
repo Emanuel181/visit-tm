@@ -154,6 +154,7 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
               }}
             >
               <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
+              <Link to="/sign-in">
               <Button
                 color="primary"
                 variant="text"
@@ -164,6 +165,7 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
               >
                 Sign in
               </Button>
+              </Link>
               <Button
                 color="primary"
                 variant="contained"

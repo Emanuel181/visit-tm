@@ -30,31 +30,6 @@ interface AppAppBarProps {
   toggleColorMode: () => void;
 }
 
-const handleLinkClick = () => {
-  return (
-    <div style={{
-      display: 'flex',
-      justifyContent: 'center', // Centers the cards horizontally
-      alignItems: 'center', // Centers the cards vertically, effective if there is extra space on the cross axis
-      flexWrap: 'wrap',
-      gap: '20px',
-      minHeight: '100vh', // Ensures the container takes at least the full viewport height
-      paddingTop: '20px', // Optional, adds space at the top of the container
-    }}>
-      {cards.map((card) => (
-        <ActionAreaCard
-          key={card.name} // Assuming 'name' is unique, use it as a key for React list
-          name={card.name}
-          description={card.description}
-          image={card.image} // Pass the image filename
-          alt={card.alt}
-        />
-      ))}
-    </div>
-  );
-};
-
-
 function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
   const [open, setOpen] = React.useState(false);
 
@@ -161,11 +136,10 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                onClick={handleLinkClick}
                 sx={{ py: '6px', px: '12px' }}
               >
                 <Typography variant="body2" color="text.primary">
-                  Explore places
+                <Button variant="contained">Explore places</Button>
                 </Typography>
               </MenuItem>
                 

@@ -1,8 +1,11 @@
-import BasicCard from "./card.tsx";
+import React from 'react';
+import ActionAreaCard from './pages/locatii.tsx';
+import cards from './data/data.js'; // Import the cards data
+import LandingPage from './pages/LandingPage.tsx';
 
 function App() {
   return (
-        <div><BasicCard></BasicCard></div>
+    <LandingPage></LandingPage>
   );
 }
 

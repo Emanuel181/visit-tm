@@ -4,25 +4,23 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import timi from './assets/timi.jpeg';
 
-
-export default function ActionAreaCard() {
+export default function ActionAreaCard({ name, description, image, alt }) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="140"
-          image={timi}
-          alt="."
+          image={image} // Assuming create-react-app's webpack config
+          alt={alt}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Timisoara
+            {name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Piata Unirii
+            {description}
           </Typography>
         </CardContent>
       </CardActionArea>

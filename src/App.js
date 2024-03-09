@@ -1,11 +1,16 @@
 import React from 'react';
-import ActionAreaCard from './pages/locatii.tsx';
-import cards from './data/data.js'; // Import the cards data
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage.tsx';
+import ActionAreaCard from './pages/locatii.tsx'; // Import the ActionAreaCard component
 
 function App() {
   return (
-    <LandingPage></LandingPage>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/explore-places" element={<ActionAreaCard />} /> {/* Define route for ActionAreaCard */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

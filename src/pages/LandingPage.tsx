@@ -15,6 +15,11 @@ import Testimonials from '../components/Testimonials.tsx';
 import FAQ from '../components/FAQ.tsx';
 import Footer from '../components/Footer.tsx';
 import getLPTheme from '../assets/getLPTheme.tsx';
+import {useState} from "react";
+import ActionAreaCard from './locatii.tsx';
+import { useNavigate } from 'react-router-dom';
+import cards from "../data/data.js";
+
 
 interface ToggleCustomThemeProps {
   showCustomTheme: Boolean;
@@ -40,7 +45,7 @@ function ToggleCustomTheme({
   );
 }
 
-export default function LandingPage() {
+const  LandingPage = () => {
   const [mode, setMode] = React.useState<PaletteMode>('dark');
   const [showCustomTheme, setShowCustomTheme] = React.useState(true);
   const LPtheme = createTheme(getLPTheme(mode));
@@ -66,7 +71,6 @@ export default function LandingPage() {
         <Divider />
         <Highlights />
         <Divider />
-        <Divider />
         <FAQ />
         <Divider />
         <Footer />
@@ -78,3 +82,5 @@ export default function LandingPage() {
     </ThemeProvider>
   );
 }
+
+export default LandingPage

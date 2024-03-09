@@ -12,9 +12,8 @@ import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import ToggleColorMode from './ToggleColorMode.tsx';
 import logo from '../assets/logo.jpg';
-import cards from '../data/data.js';
 import ActionAreaCard from "../pages/locatii.tsx";
-import {Navigate} from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 
 const logoStyle = {
@@ -139,7 +138,9 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 sx={{ py: '6px', px: '12px' }}
               >
                 <Typography variant="body2" color="text.primary">
-                <Button variant="contained">Explore places</Button>
+                  <Link to="/explore-places">
+                  <Button variant="contained">Explore places</Button>
+                </Link>
                 </Typography>
               </MenuItem>
                 

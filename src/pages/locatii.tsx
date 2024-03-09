@@ -5,11 +5,12 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import LandingPage from './LandingPage';
+import cards from "../data/data.js";
 
-export default function ActionAreaCard({ cards }) {
+const  ActionAreaCard = () => {
   return (
     <div style={{
-  
       display: 'flex',
       justifyContent: 'center', // Centers the cards horizontally
       alignItems: 'center', // Centers the cards vertically, effective if there is extra space on the cross axis
@@ -41,3 +42,5 @@ export default function ActionAreaCard({ cards }) {
     </div>
   );
 }
+
+export default ActionAreaCard;

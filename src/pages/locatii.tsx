@@ -1,31 +1,39 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
+import { useTheme } from '@mui/material/styles';
+import Card from '@mui/joy/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
-import LandingPage from './LandingPage';
+import { CardActionArea, Box } from '@mui/material';
 import cards from "../data/data.js";
 
-const  ActionAreaCard = () => {
+const ActionAreaCard = () => {
+  const theme = useTheme(); // Use the theme from the context
+
   return (
-    <div style={{
-      display: 'flex',
-      justifyContent: 'center', // Centers the cards horizontally
-      alignItems: 'center', // Centers the cards vertically, effective if there is extra space on the cross axis
-      flexWrap: 'wrap',
-      gap: '20px',
-      minHeight: '100vh', // Ensures the container takes at least the full viewport height
-      paddingTop: '20px', // Optional, adds space at the top of the container
-    }}>
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+        gap: '20px',
+        minHeight: '100vh',
+        paddingTop: '20px',
+        width: '100vw', 
+        overflow: 'hidden',
+        background: theme.palette.mode === 'dark' 
+          ? 'linear-gradient(to right, #0f0c29, #302b63, #24243e)' // Dark mode gradient
+          : 'linear-gradient(to right, #ffffff, #e5e5e5)', // Light mode gradient
+      }}
+    >
       {cards.map((card) => (
-        <Card key={card.name} sx={{ maxWidth: 345 }}>
+        <Card key={card.name} sx={{ maxWidth: 345, m: 2, bgcolor: 'background.paper' }}>
           <CardActionArea>
             <CardMedia
               component="img"
               height="140"
-              image={card.image} // Assuming create-react-app's webpack config
+              image={card.image} 
               alt={card.alt}
             />
             <CardContent>
@@ -39,8 +47,8 @@ const  ActionAreaCard = () => {
           </CardActionArea>
         </Card>
       ))}
-    </div>
+    </Box>
   );
-}
+};
 
 export default ActionAreaCard;

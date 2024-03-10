@@ -7,6 +7,28 @@
   pointer-events: none;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+
+.card-enter {
+  animation-delay: var(--animation-delay, 0s);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

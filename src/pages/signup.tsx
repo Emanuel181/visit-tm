@@ -3,8 +3,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { FaUserAlt, FaLock } from "react-icons/fa";
 import '../pages/Style/Login.css'; // Your path might be different
-import getLPTheme from '../assets/getLPTheme.tsx'; // Adjust this import path as necessary
-export default function Login() {
+
+export default function SignUp() {
   // Define the dark theme
   const theme = createTheme({
     palette: {
@@ -96,7 +96,6 @@ export default function Login() {
       // Add this to remove the blue glow border
       boxShadow: 'none',
       // Ensure the focus state has no outline or boxShadow
-
     }}
   />
               <FaLock className='icon' style={{
@@ -107,6 +106,7 @@ export default function Login() {
                 color: theme.palette.grey[500],
               }} />
             </div>
+            
             <div className="remember-forgot" style={{
               justifyContent: 'space-between', // Space elements evenly
               fontSize: '0.8rem', // Smaller font size for a cleaner look
@@ -127,6 +127,7 @@ export default function Login() {
           <button type="submit" style={{
   // ... other styles ...
   // Remove focus outline for buttons as well
+
 }}>
   Login
 </button>
@@ -146,5 +147,4 @@ export default function Login() {
       </div>
     </div>
   </ThemeProvider>
-);
-};
+);};

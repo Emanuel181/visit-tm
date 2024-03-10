@@ -13,6 +13,7 @@ const cards = [
     description: 'Piata Unirii description',
     image: unirii, // Corrected path variable
     alt: 'Piata Unirii, Timisoara',
+    url: "piata-unirii"
   },
   {
     name: 'Catedrala',

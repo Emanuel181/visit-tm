@@ -15,7 +15,7 @@ import Footer from '../components/Footer.tsx';
 import {useState} from "react";
 import getLPTheme from '../assets/getLPTheme.tsx';
 
-const LandingPage = () => {
+const LandingPage: React.FC = () => {
   const [mode, setMode] = useState<PaletteMode>('dark');
 
   const theme = React.useMemo(() => createTheme(getLPTheme(mode)), [mode]);

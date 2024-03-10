@@ -156,5 +156,4 @@ const cards = [
 
   export default cards;
   
-  // The ActionAreaCard component and App component remain the same as in the previous example.
   

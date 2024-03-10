@@ -93,13 +93,13 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 px: 0,
               }}
             >
-              <img
+              <Link to="/"><img
                 src={
                   logo
                 }
                 style={logoStyle}
                 alt="logo of sitemark"
-              />
+              /></Link>
               <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                 <MenuItem
                   onClick={() => scrollToSection('features')}
@@ -143,7 +143,15 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 </Link>
                 </Typography>
               </MenuItem>
-                
+              <MenuItem
+                sx={{ py: '6px', px: '12px' }}
+              >
+                <Typography variant="body2" color="text.primary">
+                  <Link to="/explore-places">
+                  <Button variant="contained">Explore places</Button>
+                </Link>
+                </Typography>
+              </MenuItem>
               </Box>
             </Box>
             <Box

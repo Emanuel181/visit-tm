@@ -8,11 +8,11 @@ import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
-export default function Hero() {
+export default function Hero2() {
   const theme = useTheme();
   return (
     <Box
-      id="hero"
+      id="hero2"
       sx={(theme) => ({
         width: '100%',
         backgroundImage:
@@ -42,24 +42,10 @@ export default function Hero() {
               alignSelf: 'center',
               textAlign: 'center',
             }}
-          >
-            Explore&nbsp;
-            <Typography
-              component="span"
-              variant="h1"
-              sx={{
-                color: (theme) =>
-                  theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
-              }}
-            >
-              Timisoara
+          >Union Square's
+            
+              
             </Typography>
-          </Typography>
-          <Typography variant="body1" textAlign="center" color="text.secondary">
-            Explore places from Timisoara, virtually and interactive! <br/>
-            Interact with our city and explore its views<br />
-            Discover places, admire views and enjoy a virtual tour
-          </Typography>
          
 
         </Stack>
@@ -89,7 +75,7 @@ export default function Hero() {
           }}
         >
           <iframe
-            title="timisoara"
+            title="Piata unirii"
             frameBorder="0"
             allowFullScreen
             mozallowfullscreen="true"
@@ -99,16 +85,11 @@ export default function Hero() {
             execution-while-out-of-viewport
             execution-while-not-rendered
             web-share
-            src="https://sketchfab.com/models/48602a62b13147a6936657ad0be1db92/embed"
-            style={{
-              width: '100%', // Ensures the iframe fills the container width
-              height: '100%', // Ensures the iframe fills the container height
-              border: 'none', // Removes the default border of an iframe
-            }}
-          />
+            src="https://sketchfab.com/models/ee1c0876ac7946f39c265fe228e8d939/embed"
+            style={{ width: '100%', height: '100%', minHeight: '400px' }} // Adjust the height as needed
+          ></iframe>
         </Box>
       </Container>
     </Box>
-    
   );
 }

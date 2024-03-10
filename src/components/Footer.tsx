@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
@@ -7,11 +8,10 @@ import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-
-import FacebookIcon from '@mui/icons-material/GitHub';
+import FacebookIcon from '@mui/icons-material/GitHub'; // Assuming you'll correct this import as necessary
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/X';
-import logo from '../assets/logo.jpg';
+import TwitterIcon from '@mui/icons-material/X'; // Assuming you'll correct this import as necessary
+import logo from '../assets/logo.jpg'; // Ensure the path is correct
 
 const logoStyle = {
   width: '40px',
@@ -31,6 +31,21 @@ function Copyright() {
 }
 
 export default function Footer() {
+  const [email, setEmail] = useState('');
+
+  const sendEmail = (e) => {
+    e.preventDefault(); // Prevent the default form submission
+
+    emailjs.sendForm('service_1lcj5oh', 'template_tvcnl6h', e.target, 'IHM0dzIra-ASlyDYm')
+      .then((result) => {
+          console.log(result.text);
+          alert('Subscription successful! Check your email.');
+          setEmail(''); // Clear the input field after sending
+      }, (error) => {
+          console.log(error.text);
+          alert('Failed to subscribe. Please try again later.');
+      });
+  };
   return (
     <Container
       sx={{
@@ -43,6 +58,8 @@ export default function Footer() {
       }}
     >
       <Box
+      component="form" // Set the Box component to act as a form
+      onSubmit={sendEmail} // Attach the sendEmail function to handle form submissions
         sx={{
           display: 'flex',
           flexDirection: { xs: 'column', sm: 'row' },
@@ -76,20 +93,19 @@ export default function Footer() {
             </Typography>
             <Stack direction="row" spacing={1} useFlexGap>
               <TextField
-                id="outlined-basic"
+                name="user_email" // Make sure the name matches your emailjs template variable
                 hiddenLabel
                 size="small"
                 variant="outlined"
                 fullWidth
                 aria-label="Enter your email address"
                 placeholder="Your email address"
-                inputProps={{
-                  autocomplete: 'off',
-                  ariaLabel: 'Enter your email address',
-                }}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                inputProps={{ autoComplete: 'off' }}
               />
-              <Button variant="contained" color="primary" sx={{ flexShrink: 0 }}>
-                Subscribe
+              <Button type="submit" variant="contained" color="primary" sx={{ flexShrink: 0 }}>
+            Subscribe
               </Button>
             </Stack>
           </Box>

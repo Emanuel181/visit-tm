@@ -92,8 +92,10 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 ml: '-18px',
                 px: 0,
               }}
+
             >
-              <Link to="/"><img
+            <Link to="/">
+              <img
                 src={
                   logo
                 }
@@ -162,13 +164,13 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
               }}
             >
               <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
-              <Link to="/login">
+              <Link to="/signin">
               <Button
                 color="primary"
                 variant="text"
                 size="small"
                 component="a"
-                href="/material-ui/getting-started/templates/sign-in/"
+                href="/signin/"
                 target="_blank"
               >
                 Sign in
@@ -179,7 +181,7 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 variant="contained"
                 size="small"
                 component="a"
-                href="/material-ui/getting-started/templates/sign-up/"
+                href="/signin/"
                 target="_blank"
               >
                 Sign up
@@ -233,7 +235,7 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                       color="primary"
                       variant="contained"
                       component="a"
-                      href="/material-ui/getting-started/templates/sign-up/"
+                      href="signin/"
                       target="_blank"
                       sx={{ width: '100%' }}
                     >

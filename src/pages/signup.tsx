@@ -47,7 +47,40 @@ export default function SignUp() {
   borderRadius: '10px',
   margin: '2rem 0',
   boxShadow: 'inset 5px 5px 10px #00001a, inset -5px -5px 10px #2e2e2e',
-}}>
+}}><input 
+type="email" 
+placeholder='email' 
+id='email'
+required 
+style={{
+  border: 'none',
+  outline: 'none',
+  background: 'none',
+  padding: '1.5rem',
+  paddingLeft: '2.5rem',
+  color: 'inherit',
+  width: '100%',
+  // Add this to remove the blue glow border
+  boxShadow: 'none',
+  // Ensure the focus state has no outline or boxShadow
+
+}}
+/>
+<FaUserAlt className='icon' style={{
+            position: 'absolute',
+            left: '10px',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            color: theme.palette.grey[500],
+          }} />
+        </div>
+        <div className='input-box' style={{
+position: 'relative',
+background: theme.palette.background.default,
+borderRadius: '10px',
+margin: '2rem 0',
+boxShadow: 'inset 5px 5px 10px #00001a, inset -5px -5px 10px #2e2e2e',
+        }}>
               <input 
     type="text" 
     placeholder='Username' 
@@ -57,7 +90,7 @@ export default function SignUp() {
       outline: 'none',
       background: 'none',
       padding: '1.5rem',
-      paddingLeft: '2.5rem',
+      paddingLeft: '2.6rem',
       color: 'inherit',
       width: '100%',
       // Add this to remove the blue glow border

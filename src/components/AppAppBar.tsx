@@ -140,14 +140,23 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 sx={{ py: '6px', px: '12px' }}
               >
                 <Typography variant="body2" color="text.primary">
-                  <Link to="/explore-places">
-                  <Button variant="contained">Explore places</Button>
+                  <Link to="/Robot">
+                  <Button variant="contained">Robot</Button>
+                </Link>
+                </Typography>
+              </MenuItem>
+                <MenuItem
+                sx={{ py: '6px', px: '12px' }}
+              >
+                <Typography variant="body2" color="text.primary">
+                  <Link to="/explore-places1">
+                  <Button variant="contained">Explore events</Button>
                 </Link>
                 </Typography>
               </MenuItem>
               <MenuItem
                 sx={{ py: '6px', px: '12px' }}
-              >
+              > 
                 <Typography variant="body2" color="text.primary">
                   <Link to="/explore-places">
                   <Button variant="contained">Explore places</Button>
@@ -164,28 +173,29 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
               }}
             >
               <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
-              <Link to="/signin">
+              <Link to="login">
               <Button
                 color="primary"
                 variant="text"
                 size="small"
                 component="a"
-                href="/signin/"
+                href="/login"
                 target="_blank"
               >
                 Sign in
               </Button>
               </Link>
+              <Link to="/signin">
               <Button
                 color="primary"
                 variant="contained"
                 size="small"
                 component="a"
-                href="/signin/"
+                href="/signin"
                 target="_blank"
               >
                 Sign up
-              </Button>
+              </Button></Link>
             </Box>
             <Box sx={{ display: { sm: '', md: 'none' } }}>
               <Button

@@ -5,14 +5,14 @@ import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
-import AppAppBar from '../components/AppAppBar.tsx';
-import Hero2 from '../components/Piata_unirii/Hero2.tsx';
-import Features from '../components/Piata_unirii/Features2.tsx';
-import Testimonials from '../components/Piata_unirii/Testimonials2.tsx';
-import FAQ from '../components/FAQ.tsx';
-import Footer from '../components/Footer.tsx';
+import AppAppBar from '../../../components/AppAppBar.tsx';
+import Hero2 from '../../../components/Iulius/Hero2.tsx';
+import Features from '../../../components/Iulius/Features2.tsx';
+import Testimonials from '../../../components/Iulius/Testimonials2.tsx';
+import FAQ from '../../../components/FAQ.tsx';
+import Footer from '../../../components/Footer.tsx';
 import {useState} from "react";
-import getLPTheme from '../assets/getLPTheme.tsx';
+import getLPTheme from '../../../assets/getLPTheme.tsx';
 
 const Uvt = () => {
   const [mode, setMode] = useState<PaletteMode>('dark');

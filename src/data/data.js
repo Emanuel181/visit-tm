@@ -2,10 +2,11 @@
 // Example of card data array with Timisoara, Cluj, and Bucharest
 
 import unirii from "../assets/timi.jpeg";
-import catedrala from "../assets/timi-catedrala.jpg";
-import rozelor from "../assets/timi-parc-roze.jpg";
+import ubs from "../components/Ubs/ubc2-timisoara-5-scaled.jpg";
 import politehnica from "../assets/timi-politehnica.jpg";
-import uvt from "../assets/timi-universitatea-de-vest.jpg";
+import uvt from "../components/Uvt/Uvt.jpg";
+import bcr from "../components/BCR/29715350156892.jpg";
+import iulius from "../components/Iulius/iulius-town.jpg";
 
 const cards = [
   {
@@ -16,16 +17,50 @@ const cards = [
     url: "piata-unirii"
   },
   {
-    name: 'Catedrala',
+    name: 'UBC',
     description: 'Catedrala description',
-    image: catedrala, // Corrected path variable
-    alt: 'Catedrala, Timisoara',
+    image: ubs, // Corrected path variable
+    alt: 'UBC, Timisoara',
+    url: "UBC"
   },
   {
-    name: 'Rozelor',
-    description: 'Rozelor description',
-    image: rozelor, // Corrected path variable
+    name: 'BCR',
+    description: 'BCR description',
+    image: bcr, // Corrected path variable
     alt: 'Rozelor, Timisoara',
+    url: "BCR"
+  },
+  {
+    name: 'Politehnica',
+    description: 'Politehnica description',
+    image: politehnica, // Corrected path variable
+    alt: 'Politehnica, Timisoara',
+    url: "UPT"
+  },
+  {
+    name: 'UVT',
+    description: 'UVT description',
+    image: uvt, // Corrected path variable
+    alt: 'UVT, Timisoara',
+    url:"UVT"
+  },
+  {
+    name: 'Piata Unirii',
+    description: 'Piata Unirii description',
+    image: unirii, // Corrected path variable
+    alt: 'Piata Unirii, Timisoara',
+  },
+  {
+    name: 'UBC',
+    description: 'UBC description',
+    image: ubs, // Corrected path variable
+    alt: 'UBC, Timisoara',
+  },
+  {
+    name: 'Iulius Mall',
+    description: 'Rozelor description',
+    image: iulius, // Corrected path variable
+    alt: 'Iulius Town, Timisoara',
   },
   {
     name: 'Politehnica',
@@ -46,16 +81,10 @@ const cards = [
     alt: 'Piata Unirii, Timisoara',
   },
   {
-    name: 'Catedrala',
-    description: 'Catedrala description',
-    image: catedrala, // Corrected path variable
-    alt: 'Catedrala, Timisoara',
-  },
-  {
-    name: 'Rozelor',
+    name: 'Piata Unirii',
     description: 'Rozelor description',
-    image: rozelor, // Corrected path variable
-    alt: 'Rozelor, Timisoara',
+    image: unirii, // Corrected path variable
+    alt: 'Piata Unirii, Timisoara',
   },
   {
     name: 'Politehnica',
@@ -76,18 +105,6 @@ const cards = [
     alt: 'Piata Unirii, Timisoara',
   },
   {
-    name: 'Catedrala',
-    description: 'Catedrala description',
-    image: catedrala, // Corrected path variable
-    alt: 'Catedrala, Timisoara',
-  },
-  {
-    name: 'Rozelor',
-    description: 'Rozelor description',
-    image: rozelor, // Corrected path variable
-    alt: 'Rozelor, Timisoara',
-  },
-  {
     name: 'Politehnica',
     description: 'Politehnica description',
     image: politehnica, // Corrected path variable
@@ -106,16 +123,10 @@ const cards = [
     alt: 'Piata Unirii, Timisoara',
   },
   {
-    name: 'Catedrala',
+    name: 'UVT',
     description: 'Catedrala description',
-    image: catedrala, // Corrected path variable
+    image: uvt, // Corrected path variable
     alt: 'Catedrala, Timisoara',
-  },
-  {
-    name: 'Rozelor',
-    description: 'Rozelor description',
-    image: rozelor, // Corrected path variable
-    alt: 'Rozelor, Timisoara',
   },
   {
     name: 'Politehnica',
@@ -128,42 +139,6 @@ const cards = [
     description: 'UVT description',
     image: uvt, // Corrected path variable
     alt: 'UVT, Timisoara',
-  },
-  {
-    name: 'Piata Unirii',
-    description: 'Piata Unirii description',
-    image: unirii, // Corrected path variable
-    alt: 'Piata Unirii, Timisoara',
-  },
-  {
-    name: 'Catedrala',
-    description: 'Catedrala description',
-    image: catedrala, // Corrected path variable
-    alt: 'Catedrala, Timisoara',
-  },
-  {
-    name: 'Rozelor',
-    description: 'Rozelor description',
-    image: rozelor, // Corrected path variable
-    alt: 'Rozelor, Timisoara',
-  },
-  {
-    name: 'Politehnica',
-    description: 'Politehnica description',
-    image: politehnica, // Corrected path variable
-    alt: 'Politehnica, Timisoara',
-  },
-  {
-    name: 'UVT',
-    description: 'UVT description',
-    image: uvt, // Corrected path variable
-    alt: 'UVT, Timisoara',
-  },
-  {
-    name: 'Rozelor',
-    description: 'Rozelor description',
-    image: rozelor, // Corrected path variable
-    alt: 'Rozelor, Timisoara',
   },
   {
     name: 'Politehnica',

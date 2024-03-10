@@ -6,7 +6,7 @@ import Divider from '@mui/material/Divider';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
 import AppAppBar from '../../../components/AppAppBar.tsx';
-import Hero2 from '../../../components/Upt/Hero2.tsx';
+import Hero2 from '../../../components/Uvt/Hero2.tsx';
 import Features from '../../../components/Upt/Features2.tsx';
 import Testimonials from '../../../components/Upt/Testimonials2.tsx';
 import FAQ from '../../../components/FAQ.tsx';
@@ -14,7 +14,7 @@ import Footer from '../../../components/Footer.tsx';
 import {useState} from "react";
 import getLPTheme from '../../../assets/getLPTheme.tsx';
 
-const Uvt = () => {
+const Upt = () => {
   const [mode, setMode] = useState<PaletteMode>('dark');
 
   const theme = React.useMemo(() => createTheme(getLPTheme(mode)), [mode]);
@@ -66,4 +66,4 @@ const Uvt = () => {
   );
 };
 
-export default Uvt;
+export default Upt;

@@ -14,7 +14,7 @@ import Footer from '../../../components/Footer.tsx';
 import {useState} from "react";
 import getLPTheme from '../../../assets/getLPTheme.tsx';
 
-const Uvt = () => {
+const UBC = () => {
   const [mode, setMode] = useState<PaletteMode>('dark');
 
   const theme = React.useMemo(() => createTheme(getLPTheme(mode)), [mode]);
@@ -66,4 +66,4 @@ const Uvt = () => {
   );
 };
 
-export default Uvt;
+export default UBC;

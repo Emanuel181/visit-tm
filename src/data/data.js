@@ -49,12 +49,14 @@ const cards = [
     description: 'Piata Unirii description',
     image: unirii, // Corrected path variable
     alt: 'Piata Unirii, Timisoara',
+    url: "piata-unirii"
   },
   {
     name: 'UBC',
     description: 'UBC description',
     image: ubs, // Corrected path variable
     alt: 'UBC, Timisoara',
+    url: "UBC"
   },
   {
     name: 'Iulius Mall',
@@ -67,90 +69,105 @@ const cards = [
     description: 'Politehnica description',
     image: politehnica, // Corrected path variable
     alt: 'Politehnica, Timisoara',
+    url: "UPT"
   },
   {
     name: 'UVT',
     description: 'UVT description',
     image: uvt, // Corrected path variable
     alt: 'UVT, Timisoara',
+    url:"UVT"
   },
   {
     name: 'Piata Unirii',
     description: 'Piata Unirii description',
     image: unirii, // Corrected path variable
     alt: 'Piata Unirii, Timisoara',
+    url: "piata-unirii"
   },
   {
     name: 'Piata Unirii',
     description: 'Rozelor description',
     image: unirii, // Corrected path variable
     alt: 'Piata Unirii, Timisoara',
+    url: "piata-unirii"
   },
   {
     name: 'Politehnica',
     description: 'Politehnica description',
     image: politehnica, // Corrected path variable
     alt: 'Politehnica, Timisoara',
+    url: "UPT"
   },
   {
     name: 'UVT',
     description: 'UVT description',
     image: uvt, // Corrected path variable
     alt: 'UVT, Timisoara',
+    url:"UVT"
   },
   {
     name: 'Piata Unirii',
     description: 'Piata Unirii description',
     image: unirii, // Corrected path variable
     alt: 'Piata Unirii, Timisoara',
+    url: "piata-unirii"
   },
   {
     name: 'Politehnica',
     description: 'Politehnica description',
     image: politehnica, // Corrected path variable
     alt: 'Politehnica, Timisoara',
+    url: "UPT"
   },
   {
     name: 'UVT',
     description: 'UVT description',
     image: uvt, // Corrected path variable
     alt: 'UVT, Timisoara',
+    url:"UVT"
   },
   {
     name: 'Piata Unirii',
     description: 'Piata Unirii description',
     image: unirii, // Corrected path variable
     alt: 'Piata Unirii, Timisoara',
+    url: "piata-unirii"
   },
   {
     name: 'UVT',
     description: 'Catedrala description',
     image: uvt, // Corrected path variable
     alt: 'Catedrala, Timisoara',
+    url:"UVT"
   },
   {
     name: 'Politehnica',
     description: 'Politehnica description',
     image: politehnica, // Corrected path variable
     alt: 'Politehnica, Timisoara',
+    url: "UPT"
   },
   {
     name: 'UVT',
     description: 'UVT description',
     image: uvt, // Corrected path variable
     alt: 'UVT, Timisoara',
+    url:"UVT"
   },
   {
     name: 'Politehnica',
     description: 'Politehnica description',
     image: politehnica, // Corrected path variable
     alt: 'Politehnica, Timisoara',
+    url: "UPT"
   },
   {
     name: 'UVT',
     description: 'UVT description',
     image: uvt, // Corrected path variable
     alt: 'UVT, Timisoara',
+    url:"UVT"
   }
 ];
 

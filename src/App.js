@@ -12,6 +12,7 @@ import BCR from "./pages/Style/carduri/BCR.tsx";
 import Iulius from "./pages/Style/carduri/Iulius.tsx";
 import UBC from './pages/Style/carduri/Ubc.tsx';
 import Convention from './pages/Style/carduri/Convention.tsx'
+import Robot from './components/robot.tsx';
 function App() {
   return (
     <BrowserRouter>
@@ -28,6 +29,7 @@ function App() {
         <Route path="/signin" element={<SignUp />} />
         <Route path="/UBC" element={<UBC />} /> 
         <Route path="/Convention" element={<Convention />} />
+        <Route path="/Robot" element={<Robot />} />
       </Routes>
     </BrowserRouter>
   );

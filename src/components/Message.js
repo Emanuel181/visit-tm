@@ -2,13 +2,6 @@ import React from "react";
 import { auth } from "./firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 
-const SendMessage = ({ scroll }) => {
-
-  const sendMessage = async (event) => {
-    setMessage("");
-    scroll.current.scrollIntoView({ behavior: "smooth" });
-  };
-}
 
 const Message = ({ message }) => {
   const [user] = useAuthState(auth);
@@ -28,4 +21,6 @@ const Message = ({ message }) => {
     </div>
   );
 };
+
+
 export default Message;
